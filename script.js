@@ -5,8 +5,6 @@ $(document).ready(function(){
   let anim=['example','example1'];
   let x = anim[Math.floor(Math.random()*2)];
   console.log(x);
-
-
-  
-  
+  $("#cel").css("animation-name",x);
+ 
 });
