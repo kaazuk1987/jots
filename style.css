@@ -4,7 +4,7 @@ body{
 }
 #back{
 	background-color: #009933;
-	height: 800px;
+	height: 600px;
 	width: 600px;
 	left:400px;
 	position: relative;
@@ -17,16 +17,29 @@ body{
 	height: 30px;
 	background-color:blue;
 	border-color: yellow;
-  animation-name: example;
-  animation-duration: 10s;
+  animation-name: example1;
+  animation-duration: 7s;
 }
 	@keyframes example {
   0%   {left: 0px;
-  		bottom:0px;}
+  		top:0px;background-color: blue;}
 
-  25%  {left: 150px;bottom:200px;}
+  25%  {left: 150px;top:200px;
+  		background-color: yellow;}
 
-  50%  {left: 300px;bottom:340px;}
+  50%  {left: 300px;top:340px;}
 
-  100% {left: 400px;bottom:340px;}
+  100% {left: 400px;top:370px;background-color: red;}
+}
+
+	@keyframes example1 {
+  0%   {left: 200px;
+  		top:400px;background-color: blue;}
+
+  25%  {left: 100px;top:100px;
+  		background-color: yellow;width:20px;height:25px;}
+
+  50%  {left: 250px;top:340px;}
+
+  100% {left: 400px;top:370px;background-color: red;}
 }
