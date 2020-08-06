@@ -10,9 +10,23 @@ body{
 	position: relative;
 }
 #cel{
+	position:absolute;
+	left:2px;
 	border-radius: 10px;
 	width:40px;
 	height: 30px;
 	background-color:blue;
 	border-color: yellow;
+  animation-name: example;
+  animation-duration: 10s;
+}
+	@keyframes example {
+  0%   {left: 0px;
+  		bottom:0px;}
+
+  25%  {left: 150px;bottom:200px;}
+
+  50%  {left: 300px;bottom:340px;}
+
+  100% {left: 400px;bottom:340px;}
 }
