@@ -9,30 +9,40 @@ body{
 	bottom:315px;
 	left:250px;
 	text-align: center;
-	
-	border-radius:10px;
-	background-color:blue;
+	background-color:#b300b3;
+	border-radius:7px;
+	border-color: #4d004d;
+	border-size:3px;
+	border-style: solid;
 }
-.butstart > *{
+.butstart > i{
 	margin-top: 5px;
 	color:#ffffff;
 
 }
-.butstart > *:hover{
-
-	color:#000;
+.butstart>i:hover{
+		color:#ff0000;
+		transition: color 1s;
 }
+.butstart:hover{
+
+	width:100px;
+	background-color: #cc00cc;
+	transition: color 1s, width 1s ;
+}
+
+
 #back{
 	cursor: crosshair;
-
 	background-color: #220033;
 	height: 600px;
 	width: 600px;
 	left:400px;
-	top:25px;
+	top:15px;
 	position: relative;
 }
 #cel{
+	display: none;
 	position:absolute;
 	left:2px;
 	border-radius: 10px;
