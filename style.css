@@ -45,6 +45,10 @@ h1{
 	left:400px;
 	top:15px;
 	position: relative;
+	border-radius: 9px;
+	border-color:#660000;
+	border-style:solid;
+	border-size:3px;
 }
 
 
