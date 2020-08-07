@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$(".butstart").click(function(){
+		$(".butstart").css("display","none");
+		$("#cel").css("display","block");})
+	
   $("#cel").click(function(){
   $("#cel").toggle();
 });
