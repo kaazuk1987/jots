@@ -89,3 +89,27 @@ h1{
 
   100% {left: 400px;top:370px;background-color: red;}
 }
+
+	@keyframes example2 {
+  0%   {left: 156px;
+  		top:40px;background-color: blue;}
+
+  25%  {left: 100px;top:100px;
+  		background-color: yellow;width:20px;height:25px;}
+
+  50%  {left: 250px;top:250px;}
+
+  100% {left: 400px;top:370px;background-color: red;}
+}
+
+	@keyframes example3 {
+  0%   {left: 500px;
+  		top:500px;background-color: blue;}
+
+  25%  {left: 425px;top:300px;
+  		background-color: yellow;width:20px;height:25px;}
+
+  50%  {left: 250px;top:440px;}
+
+  100% {left: 400px;top:570px;background-color: red;}
+}
