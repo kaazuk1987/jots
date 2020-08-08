@@ -10,12 +10,10 @@ $(document).ready(function(){
   $("#cel").click(function(){ // ten element trzeba zmienic na powtarzalny a animacje wybierac z coraz wiekszej puli coraz trudniejszych
   $("#cel").hide();
   losAnim(4)  //wystarczy chyba dodac
-  //slice()
-  console.log($("#cel").css("background-color"));
- // console.log("color cel "+parseInt($("#cel").css("color"),16));
-  punkty++; //punktacja na razie byle jaka ale powinna zalezec od wielkosci celu i 
-   		 //jego koloru im blizszy czerwonego tym blizej 
-             //zatrzymania za co bedzie 1  czyli im wyższa liczba koloru + ew wielkosc tym wiecej punktow
+      
+
+ 
+  punkty++; //punktacja bedzie od czasu anim im szybsza tym wiecej pkt + bonus za ostatnie chwile przed zniknieciem
    let pkt=punkty
    if (punkty>=10){
    	$("#cel").hide();
