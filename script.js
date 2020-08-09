@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   $("#cel").click(function(){ // ten element trzeba zmienic na powtarzalny a animacje wybierac z coraz wiekszej puli coraz trudniejszych
   $("#cel").hide();
-  losAnim(4)  //wystarczy chyba dodac
+  losAnim(4)  //wystarczy chyba dodac zeby losowal  z czasem trudniejsze ije dorobic oczywiscie
       
 
  
