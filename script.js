@@ -5,10 +5,14 @@ $(document).ready(function(){
 	$(".butstart").click(function(){
 		$(".butstart").css("display","none"); //startowanie "gry"
 		$("#cel").css("display","block");
+		$("#prbar").css("display","block");
+
 										})
 
   $("#cel").click(function(){ // ten element trzeba zmienic na powtarzalny a animacje wybierac z coraz wiekszej puli coraz trudniejszych
   $("#cel").hide();
+  $("#prbar").hide();
+  
   losAnim(4)  //wystarczy chyba dodac zeby losowal  z czasem trudniejsze ije dorobic oczywiscie
       
 
@@ -20,7 +24,9 @@ $(document).ready(function(){
    						//tu mozna wstawic jakis bonus
 
    }else{
-   	setTimeout(() => { $("#cel").show(); }, 2000);
+   	setTimeout(() => { $("#cel").show();$("#prbar").css("display","block");
+   		$("#prbar").css("animation-name","prog");
+   		$("#prbar").css("animation-duration","7s"); }, 2000);
    }
    $("#pkt").html(pkt);
       console.log("wypisz pkt"+pkt);
@@ -35,8 +41,6 @@ $(document).ready(function(){
   let x = anim[Math.floor(Math.random()*level)];//losowanie animacji trzeba ich wyrzezbic z 15 zeby mialo to sens
   console.log("anim " + x);
   $("#cel").css("animation-name",x);}
- 
-
-
+  
 });
 
