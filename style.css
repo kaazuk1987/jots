@@ -10,12 +10,26 @@ src:url(Sc.otf);
 body{
 	background-color:#000;
 	margin:0;
+	position: relative;
 }
 h1{
 	font-size:10px;
 	color:#b30000; 
 }
+#sct{
+	display: block;
+	height: 400px;
+	width: 300px;
+	background-color: #220033;
+	position: absolute;
+	border-radius: 9px;
+	border-color:#660000;
+	border-style:solid;
+	border-size:3px;
+	float:left;
+	top:20px;
 
+}
 .butstart{
 	position:absolute;
 	height: 30px;
