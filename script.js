@@ -8,12 +8,13 @@ $(document).ready(function(){
 		$("#prbar").show();
 		$("#prbar").css("animation-name","prog");
    		$("#prbar").css("animation-duration","7s");
+   		$("#prbarbor").show();
 										});
 
   $("#cel").click(function(){ // ten element trzeba zmienic na powtarzalny a animacje wybierac z coraz wiekszej puli coraz trudniejszych
   $("#cel").hide();
   $("#prbar").hide();
-  
+  $("#prbarbor").hide();
   losAnim(4)  //wystarczy chyba dodac zeby losowal  z czasem trudniejsze ije dorobic oczywiscie
       
 
@@ -25,7 +26,8 @@ $(document).ready(function(){
    						//tu mozna wstawic jakis bonus
 
    }else{
-   	setTimeout(() => { $("#cel").show();$("#prbar").css("display","block");
+   	setTimeout(() => { $("#cel").show();$("#prbarbor").show();
+   		$("#prbar").css("display","block");
    		$("#prbar").css("animation-name","prog");
    		$("#prbar").css("animation-duration","7s"); }, 2000);
    }
