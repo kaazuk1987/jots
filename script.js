@@ -5,9 +5,10 @@ $(document).ready(function(){
 	$(".butstart").click(function(){
 		$(".butstart").css("display","none"); //startowanie "gry"
 		$("#cel").css("display","block");
-		$("#prbar").css("display","block");
-
-										})
+		$("#prbar").show();
+		$("#prbar").css("animation-name","prog");
+   		$("#prbar").css("animation-duration","7s");
+										});
 
   $("#cel").click(function(){ // ten element trzeba zmienic na powtarzalny a animacje wybierac z coraz wiekszej puli coraz trudniejszych
   $("#cel").hide();
