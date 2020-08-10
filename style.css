@@ -1,3 +1,12 @@
+@font-face
+
+{
+
+font-family: Sc;
+
+src:url(Sc.otf);
+
+}
 body{
 	background-color:#000;
 	margin:0;
@@ -126,7 +135,13 @@ h1{
 	
 	
 }
+#timer{
+	
+}
 #prbar{
+	font-family: Sc;
+	text-indent: 70px;
+	color:white;
 	display:none;
 	border-radius: 5px;
 	position: absolute;
