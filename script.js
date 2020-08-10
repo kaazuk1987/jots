@@ -54,7 +54,9 @@ $(document).ready(function(){
 
    return "" +pkt+ " "; //zalosna metoda tymczasowa js.strings nie znam         
 });
- function liczProc(){
+
+  //Moje funkcje
+ function liczProc(){			//procenty od czasu do probara
   let t=$("#cel").css("animation-duration");
   let t1 = parseInt(i,10);
   let t2 = t1*10;
