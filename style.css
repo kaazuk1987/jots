@@ -33,18 +33,64 @@ h1{
 	margin-top: 5px;
 	color:#ffffff;
 
+
 }
 .butstart>i:hover{
 		color:#ff0000;
 		transition: color 1s;
+		
 }
 .butstart:hover{
 
 	width:100px;
+	background-color: #ff00dd;
+	transition: background-color 1s, width 1s ;
+}
+#reload
+
+{background-color:#b300b3;
+top:5px;
+left:510px;
+width: 70px;
+height: 30px;
+text-align: right;
+position: relative;
+border:3px solid #4d004d;
+border-radius:5px;
+color:white;
+opacity:0.5;
+}
+#reload > i{
+	display: block;
+	position:absolute;
+	bottom:-7px;
+	left:-10px;
+	width:30px;
+	height: 30px;
+	color:white;
+	transform: rotate(0deg);
+}
+#reload > i:hover
+{transform: scale(1.5,1.5);
+transition:transform 1s;
+}
+#reload > span{
+	color:white; 
+	top:5px;
+	position:relative;
+}
+#reload > span:hover{
+	color:red; 
+	top:5px;
+	position:relative;
+	transition:color 2s;
+}
+#reload:hover{
+	opacity:1;
+	width:80px;
 	background-color: #cc00cc;
 	transition: color 1s, width 1s ;
 }
-
 
 #back{
 	cursor: crosshair;
