@@ -11,9 +11,9 @@ $(document).ready(function(){
 		$("#prbar").css("animation-name","prog");
    		$("#prbar").css("animation-duration","7s");
    		$("#prbarbor").show();
-   		liczProc(); 
+   		liczProc(punkty); 
 										});
-
+	$("#reload").click(function(){location.reload();});
   $("#cel").click(function(){ // ten element trzeba zmienic na powtarzalny a animacje wybierac z coraz wiekszej puli coraz trudniejszych
   $("#cel").hide();
   $("#prbar").hide();
@@ -56,13 +56,16 @@ $(document).ready(function(){
 });
 
   //Moje funkcje
- function liczProc(){			//procenty od czasu do probara
+ 
+ function liczProc(pkt){			//procenty od czasu do probara
   let t=$("#cel").css("animation-duration");
   let t1 = parseInt(i,10);
   let t2 = t1*10;
+  let p=punkty;
   for(let i=0;i<=100;i++){
    
-   setTimeout(() => { $("#prbar").html(""+i+"%"); ;}, t2*i);
+   setTimeout(() => { $("#prbar").html(""+i+"%"); }, t2*i);
+  //if (){console.log(i);$("#sct").html("<br>"+i+"% <br>"); break;}
 }
 t2=0;}
 
