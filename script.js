@@ -1,6 +1,6 @@
 
 let punkty=0;   //globalne zliczanie punktów
-
+let ct=0;
 $(document).ready(function(){
 	let i=$("#cel").css("animation-duration");
 		$(".butstart").click(function(){
@@ -10,19 +10,20 @@ $(document).ready(function(){
 		$("#prbar").css("animation-name","prog");
    		$("#prbar").css("animation-duration","7s");
    		$("#prbarbor").show();
-   		liczProc(punkty); 
+   		liczProc(ct); 
 										});
 	$("#reload").click(function(){location.reload();});// restart
   $("#cel").click(function(){ // ten element trzeba zmienic na powtarzalny a animacje wybierac z coraz wiekszej puli coraz trudniejszych
   $("#cel").hide();
   $("#prbar").hide();
   $("#prbarbor").hide();
-  losAnim(4)  //wystarczy chyba dodac zeby losowal  z czasem trudniejsze ije dorobic oczywiscie
+  ct=1;
+  losAnim(4);  //wystarczy chyba dodac zeby losowal  z czasem trudniejsze ije dorobic oczywiscie
       
 
  
   punkty++; //punktacja bedzie od czasu anim im szybsza tym wiecej pkt + bonus za ostatnie chwile przed zniknieciem
-  let pkt=punkty
+  let pkt=punkty;
 
    	let i=$("#cel").css("animation-duration");
    	let x = parseInt(i,10);
@@ -56,14 +57,17 @@ $(document).ready(function(){
 
   //Moje funkcje
  
- function liczProc(){			//procenty od czasu do probara
+ function liczProc(celtraf){			//procenty od czasu do probara
   let t=$("#cel").css("animation-duration");
   let t1 = parseInt(i,10);
   let t2 = t1*10;
-  //let p=punkty;
+ 
   for(let i=0;i<=100;i++){
+  	let j=i
+  
+  
+   setTimeout(() => { $("#prbar").html(""+i+"%");j++;console.log(j+"%") }, t2*i);
    
-   setTimeout(() => { $("#prbar").html(""+i+"%"); }, t2*i);
    
 }
 t2=0;}
@@ -74,7 +78,7 @@ t2=0;}
   let x = anim[Math.floor(Math.random()*level)];//losowanie animacji trzeba ich wyrzezbic z 15 zeby mialo to sens
   
   $("#cel").css("animation-name",x);
-  liczProc(); 
+  liczProc(ct); 
 }
   
 });
