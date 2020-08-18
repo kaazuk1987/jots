@@ -34,7 +34,7 @@ $(document).ready(() => {
         let i = $("#cel").css("animation-duration");
         let x = parseInt( i, 10 );
         
-        setTimeout( () => { 
+        setTimeout( () => {
             pkt--; 
         }, x * 1000 );
 
@@ -75,7 +75,7 @@ $(document).ready(() => {
     }
 
     function losAnim(level){
-        let anim=['example','example1','example2','example3'];
+        let anim = ['example', 'example1', 'example2', 'example3'];
         
         let x = anim[ Math.floor( Math.random() * level ) ]; //losowanie animacji trzeba ich wyrzezbic z 15 zeby mialo to sens
         
